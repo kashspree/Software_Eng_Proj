@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Roboto:wght@300&family=Source+Sans+Pro:ital,wght@0,200;1,200&family=Ubuntu:wght@300&display=swap');
+
+*{
+        font-family: 'Lato', sans-serif;
+        margin-left:10px;
+        padding:0px;
+        box-sizing: border-box;
+        outline: none;
+        font-size: 13px;       
+        color:33333;
+        text-decoration:none;
+   		list-style-type:none;
+       
+}
+
+/*
+body
+{
+	background-image:url(../media/images/sdlc.png);
+	-webkit-background-size:cover;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+	height: 100vh;
+}
+
+*/
+.menu_header
+{
+	 font-family: 'lato', sans-serif;
+	 background-color: (19, 22,26,0.6);
+}
+
+.nav_menu{
+        font-family: 'lato', sans-serif;
+        overflow-x: flex;
+        margin:1px, 10px, 10px, 10px;
+        background-color:#c5dff4;
+        box-shadow: 1px 4px 7px 4px rgb(0,0,0,0.33);
+}
+.menu_containerul
+{
+	width:100%;/*to fill up the container*/
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	margin: 0 auto;
+	padding: 5px;
+	gap:5px;
+	min-height:40px;
+	max-width:1200px;
+	
+}
+.menu_containerli
+{
+	padding:1%;
+	height:50px; /*the height of each item in the UL*/
+	font-weight:500;
+	display:inline;
+	
+	
+}
+.menu_links
+{
+	font-size:13px;
+	color: darkblue;
+	height:100%; /*to match the height of the list items content */
+	padding:2px; /*to add space around the text */
+	text-decoration:none;
+    list-style-type:none;
+    display: flex;
+    align-items:center;
+    color:black;
+}
+.menu_links:hover,
+.menu_dropdown:hover.menu_links
+{
+	/*background-color:#f0f0f0; */
+	color:darkgrey;
+	background-color:lightblue;
+}
+.menu_links:first-child
+{
+	margin-right:auto;
+}
+/*formatting dropdown menu*/
+.menu_dropdown
+{
+	position:relative;
+	display:flex;
+}
+/*show the dropdown menu when hovering */
+.menu_dropdown:hover .dropdown_list
+{
+	display:block;
+}
+.dropdown_list
+{
+	background-color:#fff;
+	position:absolute;
+	left:0;
+	top:60%;
+	min-width: max-content; /*making the content to fit*/
+	box-shadow: 0 5px 10px rgba(0,0,0,0,0.3);
+	display:none;	
+}
+
+.dropdown_items
+{
+	padding: 10px 15px;
+	cursor: pointer;
+	
+	}
+	.dropdown_items:hover
+{
+	padding: 10px 15px;
+	cursor: pointer;
+	background-color: rgb(234,234,234);
+	
+	}
+.dropdown_items_link
+{
+	
+}
+
+
+
+
+
+
+
+
+
+/*sidebar menu*/
+.sidebar
+{
+	position:fixed;
+	top:0;
+	right:0;
+	height:100vh;
+	width:250px;
+	z-index:999;
+	background-color:white;
+	backdrop-filter:blur(10px);
+	box-shadow:-10px 0 10px rgba(0,0,0,0.1);
+	display:none;
+	flex-direction: column;
+	align-items:flex-start;
+	justify-content: flex-start;
+}
+.sidebar li
+{
+	width:100%;
+}
+.sidebar a
+{
+	width:100%;
+}
+@media (max-width:600px)
+{
+	.nav_menu{
+		flex-direction:column;
+		padding:18px;
+		padding:25px 0;
+	}
+	.menu_containerli
+	{
+		column-gap:10px;
+	}
+	
+	}

@@ -1,0 +1,157 @@
+/* ================== General Page Styles ================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f6f7f9;
+    color: #222;
+}
+
+/* ================== Section Container ================== */
+.SDLC_front_data {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+/* ================== Left Column ================== */
+.left.sdlc_content {
+    flex: 1 1 400px;
+    max-width: 600px;
+}
+
+.SDLC_container {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.SDLC_tr_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.td_col {
+    background: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.txttitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #0d3b66;
+    margin-bottom: 10px;
+}
+
+.txtdetail {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* ================== Right Column (Signup Form) ================== */
+.right.SDLC_signup {
+    flex: 1 1 350px;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.title_annoucement {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.el_title {
+    font-size: 1.6rem;
+    color: #ee6c4d;
+}
+
+.el_sub_title {
+    font-size: 1rem;
+    color: #222;
+    margin-top: 10px;
+}
+
+/* ================== Form Styles ================== */
+.signup__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ul_list {
+    list-style: disc inside;
+    margin-bottom: 15px;
+    padding-left: 0;
+    color: #0d3b66;
+}
+
+.ul_list_item {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.element__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.element__form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.element__form input,
+.element__form select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.element__form input:focus,
+.element__form select:focus {
+    outline: none;
+    border-color: #ee6c4d;
+    box-shadow: 0 0 5px rgba(238,108,77,0.4);
+}
+
+/* Submit button */
+.submit__form {
+    background: #ee6c4d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit__form:hover {
+    background: #d85c3c;
+}
+
+/* ================== Responsive ================== */
+@media (max-width: 900px) {
+    .SDLC_front_data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left.sdlc_content, .right.SDLC_signup {
+        max-width: 90%;
+    }
+}
+

@@ -1,0 +1,39 @@
+/* General header section */
+.SE {
+    text-align: center;                          /* Centers text inside the header */
+    background: #ffffff;                         /* White background */
+    padding: 20px;                               /* Adds padding around the header */
+    margin: 10px;                                /* Adds margin around the header */
+    border-radius: 10px;                         /* Rounded corners for the header */
+    flex: 1 1 250px;                             /* Flexbox properties to allow header to resize */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    /* Subtle shadow for depth */
+}
+
+/* Main title */
+.SEmaintitle {
+    font-size: 32px;                             /* Larger font size for main title */
+    color: #ee6c4d;                              /* Coral color for the title */
+}
+
+/* Secondary title */
+.SE_title {
+    font-size: 26px;                             /* Slightly smaller font size for secondary title */
+    color: #ee6c4d;                              /* Coral color */
+}
+
+/* Subtitle */
+.SE_subtitle {
+    font-size: 18px;                             /* Smaller font size for subtitle */
+    color: #ee6c4d;                              /* Coral color */
+}
+
+/* Span inside subtitle */
+#SE_subtitle_SE_title_span {
+    color: #ee6c4d;                              /* Coral color for the specific span element */
+}
+
+/* Definition paragraph */
+.SE_def {
+    font-size: 12px;                             /* Small font size for definition text */
+    color: #77767b;                              /* Light gray color for definition text */
+}

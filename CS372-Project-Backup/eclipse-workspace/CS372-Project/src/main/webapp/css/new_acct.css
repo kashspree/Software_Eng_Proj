@@ -1,0 +1,105 @@
+/* ===================== General Page Layout ===================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #c5dff4; /* very light turquoise */
+    color: #c5dff4;
+}
+title {
+	color: #080707;
+}
+
+/* Wrapper */
+.sdlc-new-member {
+    max-width: 650px;
+    margin: 60px auto;
+    background-color: #ffffff; /* white card */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+}
+
+/* Header */
+.new-account-headewr h3.el_title {
+    color: #ee6c4d;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.new-account-headewr p.el_sub_title {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+/* Form container */
+.new-account-conatainer {
+    margin-top: 20px;
+}
+
+/* Form elements */
+.new-member--form .element__form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-member--form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #080707 /* black label */
+}
+
+.new-member--form input[type="text"],
+.new-member--form input[type="password"],
+.new-member--form select {
+    padding: 10px 12px;
+    border: 1px solid #b0d6d6;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.new-member--form input[type="text"]:focus,
+.new-member--form input[type="password"]:focus,
+.new-member--form select:focus {
+    outline: none;
+    border-color: #00bcd4; /* brighter turquoise on focus */
+    box-shadow: 0 0 5px rgba(0, 188, 212, 0.3);
+}
+
+/* Verification labels */
+#emailVerify,
+#pwdVerify {
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Submit button */
+.submit__form {
+    background-color: #ee6c4d; /* turquoise button */
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit__form:hover {
+    background-color: #0097a7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+    .sdlc-new-member {
+        margin: 30px 20px;
+        padding: 20px;
+    }
+}

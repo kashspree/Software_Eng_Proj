@@ -1,0 +1,41 @@
+/* General header section */
+.SE {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+}
+
+/* Main title */
+.SEmaintitle {
+    font-size: 32px;
+    color: #ee6c4d;
+    
+}
+
+/* Secondary title */
+.SE_title {
+    font-size: 26px;
+    color: #ee6c4d;
+}
+
+/* Subtitle */
+.SE_subtitle {
+    font-size: 18px;
+    color: #ee6c4d;
+}
+
+/* Span inside subtitle */
+#SE_subtitle_SE_title_span {
+    color: #ee6c4d;
+}
+
+/* Definition paragraph */
+.SE_def {
+    font-size: 12px;
+    color: #77767b;
+}
